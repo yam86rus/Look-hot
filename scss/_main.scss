@@ -1,3 +1,4 @@
+// === reset ===
 *,
 *:before,
 *:after {
@@ -14,10 +15,12 @@ h5,
 h6 {
   margin: 0;
 }
+// === / reset ===
 
 body {
   max-height: 100vh;
   background: linear-gradient(135deg, #f3ece9, #e7c4e3, #c8bef7) fixed;
+  font-family: 'Bebas Neue', cursive;
 }
 
 // === Container ===
@@ -34,31 +37,63 @@ body {
 .header {
   grid-column: 1/3;
   grid-row: 1/2;
-  background: red;
-  height: 50px;
+
+  &__inner {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img{
+      height: 56px;
+  }
+  &__tel{
+        font-size: 24px;
+        @include adaptiv-font(24,20);
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+  }
+
 }
-.subtitle{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    background: orange;
+// === / Header ===
+
+// === Subtitle ===
+.subtitle {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background: orange;
 }
-.title{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background: rgb(201, 134, 10);
+// === / Subtitle ===
+
+// === Title ===
+.title {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background: rgb(201, 134, 10);
 }
-.site{
-    grid-column: 1/2;
-    grid-row: 4/5;
-    background: rgb(136, 91, 6);
+// === / Title ===
+
+// === Site ===
+.site {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  background: rgb(136, 91, 6);
 }
-.picture{
-    grid-column: 2/3;
-    grid-row: 2/5;
-    background:purple;
+// === / Site ===
+
+// === Picture ===
+.picture {
+  grid-column: 2/3;
+  grid-row: 2/5;
+  background: purple;
 }
-.footer{
-    grid-column: 1/-1;
-    grid-row: -2/-1;
-    background: grey;
+// === / Picture ===
+
+// === Footer ===
+.footer {
+  grid-column: 1/-1;
+  grid-row: -2/-1;
+  background: grey;
 }
+// === / Footer ===
