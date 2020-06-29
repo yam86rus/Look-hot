@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Shade&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
     <title>Look Hot</title>
 </head>
+
 <body>
+
+
     <div class="container">
 
         <header class="header">
@@ -19,18 +25,52 @@
                 </div>
                 <div class="header__tel">
                     <p>1.800.123.4567</p>
+                    <a href="tel:+1234567890">
+                        <svg class="header__tel-icon" class="icon">
+                            <use xlink:href='img/sprite.svg#whatsapp'></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </header>
 
         <section class="subtitle">wake up. work out.</section>
-        <section class="title">Look HOT</section>
+
+        <section class="title">Look <span class="title--hot">HOT</span>
+            <img class="title__image" src="img/Kettlebell.png" alt=""></section>
         <section class="site">www.yoursite.com</section>
-        
+
         <section class="picture">
-            <img class="picture__item" src="img/Image.png" alt="">
+            <img class="picture__item" src="img/Image.webp" alt="picture">
         </section>
-        <footer class="footer">footer</footer>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="http://instagram.com/" target="blank">
+                <svg class="icon">
+                    <use xlink:href='img/sprite.svg#instagram'></use>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/" target="blank">
+                <svg class="icon">
+                    <use xlink:href='img/sprite.svg#facebook'></use>
+                </svg>
+            </a>
+            <a href="https://twitter.com/explore" target="blank">
+                <svg class="icon">
+                    <use xlink:href='img/sprite.svg#twitter'></use>
+                </svg>
+            </a>
+            <a href="https://www.whatsapp.com/?lang=ru" target="blank">
+                <svg class="icon">
+                    <use xlink:href='img/sprite.svg#whatsapp'></use>
+                </svg>
+            </a>
+        </footer>
+        <!-- / Footer -->
     </div>
+
+
 </body>
+
 </html>
